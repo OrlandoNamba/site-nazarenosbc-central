@@ -20,9 +20,32 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+.logo {
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem;
+}
+
 .logo img {
     max-width: 90px;
     height: auto;
+}
+
+.texto-logo {
+    text-align: center; 
+    font-family: poppins, sans-serif;
+}
+
+.texto-logo p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.subtexto-logo {
+    font-weight: 400; 
+    font-size: 12px; 
+    margin-top: 0.25rem;
 }
 
 /* Botão hambúrguer */
@@ -130,3 +153,37 @@ header {
     font-weight: medium;
 }
 
+.saudacoes {
+    font-family: 'inter', sans-serif;
+}
+
+h1.titulo-saudacoes {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.375rem;
+}
+
+p.texto-saudacoes {
+    margin-top: 1rem;
+    font-size: 18px;
+    opacity: 0.75;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.templo-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    overflow: hidden; 
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.templo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
