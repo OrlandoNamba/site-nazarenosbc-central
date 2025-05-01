@@ -182,7 +182,7 @@ p.texto-saudacoes {
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 300px;
+    height: 170px;
     overflow: hidden; 
     margin: 0 auto;
     border-radius: 8px;
@@ -193,4 +193,5 @@ p.texto-saudacoes {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 70%;
 }
