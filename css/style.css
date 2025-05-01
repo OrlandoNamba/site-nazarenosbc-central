@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'inter', sans-serif;
     background-color: #F5F5F5;
@@ -32,6 +38,7 @@ header {
 }
 
 .texto-logo {
+    margin-left: 0.19rem;
     text-align: center; 
     font-family: poppins, sans-serif;
 }
@@ -40,12 +47,6 @@ header {
     margin: 0;
     font-weight: 600;
     font-size: 14px;
-}
-
-.subtexto-logo {
-    font-weight: 400; 
-    font-size: 12px; 
-    margin-top: 0.25rem;
 }
 
 /* Botão hambúrguer */
@@ -153,8 +154,13 @@ header {
     font-weight: medium;
 }
 
+.container {
+    padding: 0 1rem;
+}
+
 .saudacoes {
     font-family: 'inter', sans-serif;
+    margin-top: 2rem;
 }
 
 h1.titulo-saudacoes {
@@ -169,7 +175,7 @@ p.texto-saudacoes {
     font-size: 18px;
     opacity: 0.75;
     font-weight: 400;
-    text-align: justify;
+    text-align: center;
 }
 
 .templo-container {
@@ -180,6 +186,7 @@ p.texto-saudacoes {
     overflow: hidden; 
     margin: 0 auto;
     border-radius: 8px;
+    margin-top: 2rem;
 }
 
 .templo-container img {
