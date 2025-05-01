@@ -29,24 +29,24 @@ header {
 .logo {
     display: flex; 
     align-items: center; 
-    gap: 0.5rem;
+    gap: 1.7rem;
 }
 
 .logo img {
-    max-width: 90px;
+    max-width: 4.375rem;
     height: auto;
 }
 
 .texto-logo {
-    margin-left: 0.19rem;
     text-align: center; 
-    font-family: poppins, sans-serif;
+
 }
 
 .texto-logo p {
     margin: 0;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
+    font-family: 'poppins', sans-serif;
 }
 
 /* Botão hambúrguer */
@@ -149,7 +149,7 @@ header {
 .menu ul li a {
     text-decoration: none;
     color: #000000;
-    font-family: raleway, sans-serif;
+    font-family: 'raleway', sans-serif;
     font-size: 16px;
     font-weight: medium;
 }
@@ -218,4 +218,43 @@ p.texto-saudacoes {
     50% {
         transform: translateY(10px);
     }
+}
+
+.sobre {
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1.5625rem;
+}
+
+p.sobre {
+}
+
+.efesios-4-13 {
+    background-color: #EBEBEB; /* Cor de fundo */
+    border: 1px solid #ddd; /* Borda fina */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    padding: 1.5rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    max-width: 200px; /* Largura máxima */
+    height: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 0 auto; /* Centraliza o elemento na tela */
+    margin-bottom: 2rem; /* Espaçamento superior */
+}
+
+.efesios-4-13 h3 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.efesios-4-13 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-top: 1rem;
 }
