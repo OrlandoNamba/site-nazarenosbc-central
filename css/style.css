@@ -24,6 +24,7 @@ header {
     padding: 1rem;
     background-color: #E9EBED;
     border-bottom: 1px solid #ddd;
+    height: 5rem;
 }
 
 .logo {
@@ -221,29 +222,30 @@ p.texto-saudacoes {
 }
 
 .sobre {
-
+    font-family: 'inter', sans-serif;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5625rem;
 }
 
 p.sobre {
+    font-size: 1rem;
 }
 
 .efesios-4-13 {
-    background-color: #EBEBEB; /* Cor de fundo */
-    border: 1px solid #ddd; /* Borda fina */
-    border-radius: 8px; /* Bordas levemente arredondadas */
-    padding: 1.5rem; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    max-width: 200px; /* Largura máxima */
-    height: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin: 0 auto; /* Centraliza o elemento na tela */
-    margin-bottom: 2rem; /* Espaçamento superior */
+    background-color: #EBEBEB;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 200px;
+    height: 185px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .efesios-4-13 h3 {
@@ -259,30 +261,52 @@ p.sobre {
     margin-top: 1rem;
 }
 
+.voltar-topo {
+    position: fixed;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none; 
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    text-align: center;
+}
+
+.voltar-topo:hover {
+    background-color: #555;
+}
+
 .footer {
-    background-color: #E9EBED; /* Cor de fundo do footer */
-    padding: 1rem 2rem; /* Espaçamento interno */
+    background-color: #E9EBED;
+    padding: 0.1rem 2rem;
 }
 
 .footer-copyright {
-    text-align: center; /* Centraliza o texto */
-    font-size: 14px; /* Tamanho da fonte */
-    color: #666; /* Cor do texto */
-    margin-top: 0.1rem; /* Espaçamento acima */
-    padding: 1rem 0; /* Espaçamento interno */
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.1rem;
+    padding: 1rem 0;
 }
 
 .footer-copyright .footer-central {
-    white-space: nowrap; /* Impede quebra de linha */
-    font-weight: normal; /* Estilo normal */
+    font-weight: normal;
 }
 
 .footer-copyright a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #000; /* Cor do link */
-    font-weight: bold; /* Destaca o link */
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
 
 .footer-copyright a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
 }

@@ -38,3 +38,46 @@ function toggleScrollIndicator() {
 
 // Adiciona o evento de scroll
 window.addEventListener('scroll', toggleScrollIndicator);
+
+// Seleciona o botão e o footer
+const voltarTopoButton = document.getElementById('voltar-topo');
+const footer = document.querySelector('.footer');
+
+// Mostra o botão ao rolar a página
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        voltarTopoButton.style.display = 'flex';
+    } else {
+        voltarTopoButton.style.display = 'none';
+    }
+
+    // Impede que o botão ultrapasse o footer
+    const footerPosition = footer.getBoundingClientRect().top + window.scrollY;
+    const buttonHeight = voltarTopoButton.offsetHeight;
+    const windowHeight = window.innerHeight;
+
+    if (window.scrollY + windowHeight - buttonHeight > footerPosition) {
+        voltarTopoButton.style.bottom = `${windowHeight + window.scrollY - footerPosition + 20}px`;
+    } else {
+        voltarTopoButton.style.bottom = '2rem';
+    }
+});
+
+let isScrollingToTop = false; // Flag para controlar a rolagem
+
+// Função personalizada para rolagem suave
+function smoothScrollToTop() {
+    if (window.scrollY > 5 && isScrollingToTop) {
+        const scrollStep = window.scrollY / 5; // Define o passo da rolagem (quanto menor, mais suave)
+        window.scrollBy(0, -scrollStep); // Rola para cima em pequenos passos
+        requestAnimationFrame(smoothScrollToTop); // Continua a animação
+    } else {
+        isScrollingToTop = false; // Reseta a flag quando a rolagem termina
+    }
+}
+
+// Leva o usuário ao topo ao clicar no botão
+voltarTopoButton.addEventListener('click', () => {
+    isScrollingToTop = true; // Ativa a flag
+    smoothScrollToTop();
+});
