@@ -19,6 +19,18 @@ overlay.addEventListener('click', () => {
     menuHamburger.classList.remove('active');
 });
 
+// Seleciona o menu, os links, o botão hambúrguer e o overlay
+const menuLinks = document.querySelectorAll('.menu a');
+
+// Fecha o menu ao clicar em qualquer link
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+        menuHamburger.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});
+
 // Seleciona a div da seta
 const scrollIndicator = document.querySelector('.scroll-indicator');
 
@@ -28,11 +40,10 @@ function toggleScrollIndicator() {
     const windowHeight = window.innerHeight; 
     const indicatorPosition = scrollIndicator.getBoundingClientRect().top + scrollPosition;
 
-    // Verifica se o meio da tela está acima ou abaixo da seta
     if (scrollPosition + windowHeight / 2 > indicatorPosition) {
-        scrollIndicator.style.opacity = '0'; // Oculta suavemente
+        scrollIndicator.style.opacity = '0';
     } else {
-        scrollIndicator.style.opacity = '1'; // Mostra suavemente
+        scrollIndicator.style.opacity = '1';
     }
 }
 
@@ -68,16 +79,16 @@ let isScrollingToTop = false; // Flag para controlar a rolagem
 // Função personalizada para rolagem suave
 function smoothScrollToTop() {
     if (window.scrollY > 5 && isScrollingToTop) {
-        const scrollStep = window.scrollY / 5; // Define o passo da rolagem (quanto menor, mais suave)
-        window.scrollBy(0, -scrollStep); // Rola para cima em pequenos passos
-        requestAnimationFrame(smoothScrollToTop); // Continua a animação
+        const scrollStep = window.scrollY / 5;
+        window.scrollBy(0, -scrollStep);
+        requestAnimationFrame(smoothScrollToTop);
     } else {
-        isScrollingToTop = false; // Reseta a flag quando a rolagem termina
+        isScrollingToTop = false;
     }
 }
 
 // Leva o usuário ao topo ao clicar no botão
 voltarTopoButton.addEventListener('click', () => {
-    isScrollingToTop = true; // Ativa a flag
+    isScrollingToTop = true;
     smoothScrollToTop();
 });

@@ -131,13 +131,15 @@ header {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     transition: left 0.3s ease; 
     z-index: 1000; 
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 1rem;
 }
 
 .menu.active {
     left: 0;
+    display: flex; /* Mostra o menu quando ativo */
+    flex-direction: column;
 }
 
 .menu ul {
@@ -163,6 +165,9 @@ section {
     margin-top: 2rem;
     margin-bottom: 4rem;
     }
+
+
+/*                                      PÁGINA INICIAL */
 
 .saudacoes {
     font-family: 'inter', sans-serif;
@@ -261,6 +266,8 @@ p.sobre {
     margin-top: 1rem;
 }
 
+/*                                     FINAL DA PÁGINA INICIAL */
+
 .voltar-topo {
     position: fixed;
     right: 1rem;
@@ -285,6 +292,7 @@ p.sobre {
 }
 
 .footer {
+    border: 1px solid #ddd;
     background-color: #E9EBED;
     padding: 0.1rem 2rem;
 }
@@ -309,4 +317,36 @@ p.sobre {
 
 .footer-copyright a:hover {
     text-decoration: underline;
+}
+
+
+/*                                     PÁGINA ENDEREÇO */
+
+.venha-visitar {
+    font-family: 'inter', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5625rem;
+}
+
+p.venha-visitar {
+    font-size: 1rem;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.clique-aqui {
+    font-weight: 600;
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.clique-aqui:hover {
+    text-decoration: underline;
+    color: #1D4ED8;
 }
