@@ -50,7 +50,6 @@ header {
     font-family: 'poppins', sans-serif;
 }
 
-/* Botão hambúrguer */
 .menu-hamburguer {
     position: relative;
     display: flex;
@@ -65,7 +64,6 @@ header {
     border: none;
 }
 
-/* Linhas do hambúrguer */
 .menu-hamburguer span {
     display: block;
     height: 3px;
@@ -75,12 +73,10 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Esconde as linhas do hambúrguer quando o "X" aparece */
 .menu-hamburguer.active span {
     opacity: 0;
 }
 
-/* Criação do "X" */
 .menu-hamburguer.active::before,
 .menu-hamburguer.active::after {
     content: '';
@@ -104,7 +100,6 @@ header {
     top: 10px;
 }
 
-/* Filtro de fundo */
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -138,7 +133,7 @@ header {
 
 .menu.active {
     left: 0;
-    display: flex; /* Mostra o menu quando ativo */
+    display: flex;
     flex-direction: column;
 }
 
@@ -372,17 +367,35 @@ p.venha-visitar {
     text-decoration: underline;
 }
 
-.redes-sociais {
+.redes-sociais-container {
     display: inline-flex;
-    gap: 0.2rem;
-    vertical-align: middle;
-}
-
-.redes-sociais img {
-    width: 40px;
-    height: 30px;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  
+  .redes-sociais-container .semibold {
+    display: inline-block; 
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  
+  
+  .redes-sociais {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .redes-sociais img {
+    margin-top: 0.5rem;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
-}
+    flex-shrink: 0;
+  }
 
 
 /*                                     FINAL DA PÁGINA FALE CONOSCO */
@@ -501,7 +514,6 @@ p.venha-visitar {
         font-size: 1.125rem;
     }
 
-
 /*                                     FINAL DA PÁGINA ENDEREÇO */
 
 
@@ -604,12 +616,11 @@ p.venha-visitar {
     
     .texto-sobre {
         position: relative;
-        padding-right: 320px; /* Espaço para a caixa à direita */
-        min-height: 200px; /* Altura mínima para evitar sobreposição */
-      }
+        padding-right: 320px;
+        min-height: 200px;
+    }
       
-      /* Caixa de Efésios - posicionamento absoluto */
-      .efesios-4-13 {
+    .efesios-4-13 {
         position: absolute;
         top: 55%;
         right: 0;
@@ -621,18 +632,52 @@ p.venha-visitar {
         padding: 1.5rem;
         text-align: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transform: translateY(-50%); /* Corrige o deslocamento para centralizar */
-      }
+        transform: translateY(-50%);
+    }
 
-      .efesios-4-13 h3 {
+    .efesios-4-13 h3 {
         font-size: 1.5rem;
         margin-bottom: 1.8rem;
         line-height: 2.2rem;
         font-weight: 400;
-      }
+    }
       
-      .efesios-4-13 p {
+    .efesios-4-13 p {
         font-size: 1.15rem;
         font-weight: 300;
-      }
+    }
+
+/*                                     FINAL DA PÁGINA INICIAL */
+
+
+/*                                     PÁGINA ENDEREÇO */
+
+    .venha-visitar {
+        margin-top: 5rem;
+    }
+
+    .video-container {
+        max-width: 800px;
+        margin: 20px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+/*                                     FINAL DA PÁGINA ENDEREÇO */
+
+
+/*                                     PÁGINA FALE CONOSCO */
+
+    .fale-conosco {
+        margin-top: 5rem;
+    }
+
+/*                                     FINAL DA PÁGINA FALE CONOSCO */
+
+
+    .footer-central {
+        font-size: 1rem;
+    }
+
 }

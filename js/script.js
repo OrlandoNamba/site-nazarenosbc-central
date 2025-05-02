@@ -1,8 +1,9 @@
+
+// Menu Hamburguer
 const menuHamburger = document.querySelector('.menu-hamburguer');
 const menu = document.querySelector('.menu');
 const overlay = document.createElement('div');
 
-// Adiciona a classe ao filtro de fundo
 overlay.classList.add('menu-overlay');
 document.body.appendChild(overlay);
 
@@ -12,17 +13,14 @@ menuHamburger.addEventListener('click', () => {
     menuHamburger.classList.toggle('active');
 });
 
-// Fecha o menu ao clicar no filtro
 overlay.addEventListener('click', () => {
     menu.classList.remove('active');
     overlay.classList.remove('active');
     menuHamburger.classList.remove('active');
 });
 
-// Seleciona o menu, os links, o botão hambúrguer e o overlay
 const menuLinks = document.querySelectorAll('.menu a');
 
-// Fecha o menu ao clicar em qualquer link
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.remove('active');
@@ -31,10 +29,10 @@ menuLinks.forEach(link => {
     });
 });
 
-// Seleciona a div da seta
+
+// Seta indicadora de scroll
 const scrollIndicator = document.querySelector('.scroll-indicator');
 
-// Função para verificar a posição do scroll
 function toggleScrollIndicator() {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight; 
@@ -47,14 +45,13 @@ function toggleScrollIndicator() {
     }
 }
 
-// Adiciona o evento de scroll
 window.addEventListener('scroll', toggleScrollIndicator);
 
-// Seleciona o botão e o footer
+
+// Criar botão de voltar ao topo
 const voltarTopoButton = document.getElementById('voltar-topo');
 const footer = document.querySelector('.footer');
 
-// Mostra o botão ao rolar a página
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         voltarTopoButton.style.display = 'flex';
@@ -62,7 +59,6 @@ window.addEventListener('scroll', () => {
         voltarTopoButton.style.display = 'none';
     }
 
-    // Impede que o botão ultrapasse o footer
     const footerPosition = footer.getBoundingClientRect().top + window.scrollY;
     const buttonHeight = voltarTopoButton.offsetHeight;
     const windowHeight = window.innerHeight;
@@ -74,9 +70,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-let isScrollingToTop = false; // Flag para controlar a rolagem
+let isScrollingToTop = false;
 
-// Função personalizada para rolagem suave
 function smoothScrollToTop() {
     if (window.scrollY > 5 && isScrollingToTop) {
         const scrollStep = window.scrollY / 5;
@@ -87,7 +82,6 @@ function smoothScrollToTop() {
     }
 }
 
-// Leva o usuário ao topo ao clicar no botão
 voltarTopoButton.addEventListener('click', () => {
     isScrollingToTop = true;
     smoothScrollToTop();
