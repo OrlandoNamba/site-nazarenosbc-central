@@ -125,7 +125,7 @@ header {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 250px;
+    width: 15.625rem;
     height: 100%;
     background-color: #fff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -183,7 +183,7 @@ h1.titulo-saudacoes {
 
 p.texto-saudacoes {
     margin-top: 1rem;
-    font-size: 18px;
+    font-size: 1.125rem;
     opacity: 0.75;
     font-weight: 400;
     text-align: center;
@@ -256,7 +256,7 @@ p.sobre {
 .efesios-4-13 h3 {
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
@@ -382,4 +382,104 @@ p.venha-visitar {
     width: 40px;
     height: 30px;
     object-fit: contain;
+}
+
+
+/*                                     FINAL DA PÁGINA FALE CONOSCO */
+
+
+/*                                     MEDIA QUERY TABLETS */
+
+@media (min-width: 768px) {
+    header {
+        padding: 2.5em;
+    }
+
+    .logo img {
+        max-width: 5rem;
+    }
+
+    .texto-logo {
+        margin-left: 2rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    .texto-logo p {
+        font-size: 1.20rem;
+    }
+
+    .menu {
+        width: 15.625rem;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #000000;
+        font-family: 'raleway', sans-serif;
+        font-size: 1.25rem;
+        font-weight: medium;
+    }
+
+    .container {
+        padding: 0 2.5rem;
+    }
+
+/*                                      PÁGINA INICIAL */
+
+    .saudacoes {
+        margin-top: 3rem;
+    }
+
+    h1.titulo-saudacoes {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    p.texto-saudacoes {
+        font-size: 1.25rem;
+        margin-top: 1.125rem;
+    }
+
+    .templo-container {
+        position: relative;
+        width: 100%;
+        max-width: 56.25rem;
+        height: 22rem;
+        overflow: hidden; 
+        margin: 0 auto;
+        border-radius: 8px;
+        margin-top: 3rem;
+    }
+    
+    .templo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 50%;
+    }
+
+    .sobre {
+        font-family: 'inter', sans-serif;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.8150rem;
+    }
+    
+    p.sobre {
+        font-size: 1.125rem;
+    }
+
+    .efesios-4-13 {
+        max-width: 25rem;
+        height: 10rem;
+        padding: 2.2rem;
+    }
+
+/*                                    FINAL DA PÁGINA INICIAL */
+
 }
