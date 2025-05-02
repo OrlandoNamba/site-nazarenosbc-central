@@ -154,7 +154,7 @@ header {
     color: #000000;
     font-family: 'raleway', sans-serif;
     font-size: 16px;
-    font-weight: medium;
+    font-weight: 500;
 }
 
 .container {
@@ -415,16 +415,29 @@ p.venha-visitar {
         width: 15.625rem;
     }
 
+    .menu ul {
+        gap: 2rem;
+    }
+
     .menu ul li a {
         text-decoration: none;
         color: #000000;
         font-family: 'raleway', sans-serif;
         font-size: 1.25rem;
-        font-weight: medium;
+        font-weight: 500;
     }
 
     .container {
         padding: 0 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.8150rem;
+    }
+
+    p {
+        font-size: 1.125rem;
     }
 
 /*                                      PÁGINA INICIAL */
@@ -465,11 +478,6 @@ p.venha-visitar {
         font-family: 'inter', sans-serif;
     }
     
-    h2 {
-        font-size: 1.75rem;
-        margin-bottom: 1.8150rem;
-    }
-    
     p.sobre {
         font-size: 1.125rem;
     }
@@ -482,4 +490,24 @@ p.venha-visitar {
 
 /*                                    FINAL DA PÁGINA INICIAL */
 
+
+/*                                     PÁGINA ENDEREÇO */
+
+    .fale-conosco {
+        margin-top: 3rem;
+    }
+
+    .redes-sociais-container {
+        font-size: 1.125rem;
+    }
+
+
+/*                                     FINAL DA PÁGINA ENDEREÇO */
+
+/*                                     PÁGINA FALE CONOSCO */
+    
+    .fale-conosco {
+        margin-top: 3rem;
+    }
+/*                                     FINAL DA PÁGINA FALE CONOSCO */
 }
