@@ -29,7 +29,7 @@ header {
 .logo {
     display: flex; 
     align-items: center; 
-    gap: 1.7rem;
+    gap: 1rem;
 }
 
 .logo img {
@@ -257,4 +257,32 @@ p.sobre {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin-top: 1rem;
+}
+
+.footer {
+    background-color: #E9EBED; /* Cor de fundo do footer */
+    padding: 1rem 2rem; /* Espaçamento interno */
+}
+
+.footer-copyright {
+    text-align: center; /* Centraliza o texto */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+    margin-top: 0.1rem; /* Espaçamento acima */
+    padding: 1rem 0; /* Espaçamento interno */
+}
+
+.footer-copyright .footer-central {
+    white-space: nowrap; /* Impede quebra de linha */
+    font-weight: normal; /* Estilo normal */
+}
+
+.footer-copyright a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000; /* Cor do link */
+    font-weight: bold; /* Destaca o link */
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
