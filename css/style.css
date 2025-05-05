@@ -335,6 +335,10 @@ p.venha-visitar {
     font-weight: 600;
 }
 
+.mapa-container {
+    max-width: 35rem;
+}
+
 .clique-aqui {
     font-weight: 600;
     color: #2563EB;
@@ -504,6 +508,10 @@ p.venha-visitar {
 /*                                    FINAL DA PÁGINA INICIAL */
 
 
+
+
+
+
 /*                                     PÁGINA ENDEREÇO */
 
     .fale-conosco {
@@ -515,6 +523,10 @@ p.venha-visitar {
     }
 
 /*                                     FINAL DA PÁGINA ENDEREÇO */
+
+
+
+
 
 
 /*                                     PÁGINA FALE CONOSCO */
