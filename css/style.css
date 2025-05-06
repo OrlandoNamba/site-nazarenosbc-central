@@ -377,30 +377,55 @@ p.venha-visitar {
     white-space: nowrap;
     width: 100%;
     flex-wrap: nowrap;
-  }
+}
   
-  .redes-sociais-container .semibold {
-    display: inline-block; 
-    margin-right: 8px;
-    flex-shrink: 0;
-  }
-  
-  
-  .redes-sociais {
-    display: inline-flex;
-    gap: 0.5rem;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-  
-  .redes-sociais img {
+.redes-sociais-container .semibold {
+display: inline-block; 
+margin-right: 8px;
+flex-shrink: 0;
+}
+
+
+.redes-sociais {
+display: inline-flex;
+gap: 0.5rem;
+align-items: center;
+flex-wrap: nowrap;
+}
+
+.redes-sociais img {
     margin-top: 0.5rem;
     width: 32px;
     height: 32px;
     object-fit: contain;
     flex-shrink: 0;
-  }
+}
 
+.aplicativos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.21rem;
+    overflow-x: auto;
+}
+
+.aplicativos img {
+    flex-shrink: 0;
+    object-fit: contain;
+    margin-top: -2.5rem;
+}
+
+.aplicativo-android img {
+    width: 8.7rem;
+    height: 8.7rem;
+    margin-left: 1rem;
+}
+
+.aplicativo-ios img {
+    width: 9.5rem;
+    height: 9.5rem;
+    padding-bottom: 0.8rem;
+}
 
 /*                                     FINAL DA PÁGINA FALE CONOSCO */
 
